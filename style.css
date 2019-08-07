@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #F1C40F;
+  font-family: konnect;
+  font-size: 18px;
+  background-color: #121212;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+  overflow: hidden;
+
+  /* GRADIENT QUI MARCHE PAS SA MERE
+   background: rgb(18,18,18);
+   background: #121212;
+   background: -moz-linear-gradient(45deg, #121212 0%, #393939 100%);
+   background: -webkit-linear-gradient(45deg, #121212 0%,#393939 100%);
+   background: linear-gradient(45deg, #121212 0%,#393939 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#393939',GradientType=1 );
+   */
+}
+
+/* BAR NAV */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+   list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  margin-left : 60px;
+  float: left;
+  margin-top: 45px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+  transition: border-bottom 0.1s ease-in;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+#produit {
+  opacity: 1;
+  border-bottom: 2px solid;
+}
+.panier {
+  display: flex;
+  float: right;
+  margin-right : 60px;
+  margin-top: 45px;
+}
+.cards {
+  width: 26px;
+  height: auto;
+  padding-left: 5px;
+  position: relative;
+  bottom: 5px;
+}
+.shoppingcard2 {
+  width: 26px;
+  height: auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 5px;
+}
+.shoppingcardc {
+  width: 26px;
+  height: auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 5px;
+}
+.shoppingcardb {
+  width: 26px;
+  height: auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 5px;
+}
+.shoppingcard {
+  width: 26px;
+  height: auto;
+  padding-left: 5px;
+  position: absolute;
+  bottom: 5px;
+}
+
+li:hover {
+  opacity: 1;
+  border-bottom: 2px solid;
+}
+
+/* MAIN CONTENT */
+
+.container {
+  display: flex;
+  margin: 60px 100px 60px 100px;
+  height: auto;
+  height: 70vh;
+  position: relative;
+
+/* LEFT TEXT */
+}
+.text {
+  display: flex;
+  flex-direction: column;
+
+}
+.texttop {
+  display: flex;
+  flex-direction: column;
+}
+#texttopB {
+  color: #ECF0F1;
+  font-size: 1.2em;
+  font-weight: 400;
+  display: none;
+}
+#texttopC {
+  color: #ECF0F1;
+  font-size: 1.2em;
+  font-weight: 400;
+  display: none;
+}
+#texttop {
+  color: #ECF0F1;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.line{
+width: 112px;
+margin: 20px 0px 20px 0px;
+border-bottom: 2px solid #F1C40F;
+transition: all 0.5s ease-in-out;
+
+}
+.textbottom {
+  position: absolute;
+  bottom: 50px;
+}
+.price {
+  color: #ECF0F1;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+.button {
+  color: #ECF0F1;
+  padding: 5px 15px 5px 15px;
+  border: 2px solid #F1C40F;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.1s ease-in;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  opacity: 1;
+}
+
+/* PARAPLUIE DROITE */
+.leftpart {
+  display: flex;
+  flex-direction: column;
+}
+.parapluie {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  margin: 0;
+  width: 450px;
+  height: auto;
+  display: none;
+}
+.parapluie2 {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  margin: 0;
+  width: 450px;
+  height: auto;
+  display: none;
+}
+.parapluiec {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  margin: 0;
+  width: 450px;
+  height: auto;
+}
+.parapluieb {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  margin: 0;
+  width: 450px;
+  height: auto;
+}
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  right: 20%;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 5px 0 5px;
+  background-color: #F2423D;
+  right: 25%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#yellow {
+    background-color: #F1C40F;
+    opacity: 0.5;
+
+}
+#coral {
+    background-color: #F2423D;
+    opacity: 0.5;
+
+}
+#blue {
+    background-color: #5D70FF;
+    opacity: 0.5;
+}
+
+#coral:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#yellow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#blue:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+/* GROS ROND EN BACKGROUND */
+
+.bigrondbox {
+  z-index: -1;
+  display: inline-block;
+  position: relative;
+  top: -400px;
+  right: -800px;
+}
+.bigrond {
+  height: 1200px;
+  width: 1200px;
+  border-radius: 50%;
+  background-color: #5D70FF;
+  position: absolute;
+  top: -900px;
+  left: -100px;
+  transition: all 0.5s ease-in-out;
+
+}
+/* MEDIA QUERIES BITCH */
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 40px 60px 40px 60px;
+  }
+  @media screen and (max-width: 800px) {
+    body {
+      overflow-y: scroll;
+    }
+    .container {
+      flex-direction: column;
+    }
+   .umbrella {
+     position: relative;
+     margin: 0;
+   }
